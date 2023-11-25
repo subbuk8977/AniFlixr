@@ -1,18 +1,14 @@
 import React from "react";
 
 import "./Home.scss";
-import Navbar from "../../components/navbar/Navbar";
-import FeaturedAnime from "../../components/featuredAnime/FeaturedAnime";
-import GenreBar from "../../components/trending/genreBar/GenreBar";
-import TrendingAnime from "../../components/trending/TrendingAnime";
+import Navbar from "../../components/Navbar/Navbar";
+import Featured from "../../components/Featured/Featured";
 
 const Home = () => {
   return (
     <div className="Home">
       <Navbar></Navbar>
-      <FeaturedAnime></FeaturedAnime>
-      <GenreBar></GenreBar>
-      <TrendingAnime></TrendingAnime>
+      <Featured></Featured>
     </div>
   );
 };

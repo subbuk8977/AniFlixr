@@ -1,0 +1,94 @@
+.overlay {
+  background-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 1));
+  height: 100vh;
+  width: 100vw;
+
+  position: relative;
+
+  .info {
+    color: white;
+    position: absolute;
+    bottom: 15vh;
+    left: 10vw;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+
+    width: 40vw;
+
+    h1 {
+      font-size: 3rem;
+      text-wrap: nowrap;
+    }
+
+    .meta {
+      display: flex;
+      width: 100%;
+
+      justify-content: flex-start;
+      gap: 5px;
+
+      span {
+        color: gray;
+        &::after {
+          content: " · ";
+        }
+      }
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    .buttons {
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      gap: 20px;
+      .play {
+        font-size: 0.9rem;
+
+        padding: 15px 30px;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+
+        background-color: #2f925d;
+        color: white;
+
+        transition: 0.5s;
+
+        cursor: pointer;
+
+        &:hover {
+          background: red;
+        }
+      }
+      .trailer {
+        cursor: pointer;
+
+        font-size: 0.9rem;
+
+        padding: 15px 30px;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+
+        background-color: #28262d;
+        color: white;
+
+        transition: 0.5s;
+
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+  }
+}
