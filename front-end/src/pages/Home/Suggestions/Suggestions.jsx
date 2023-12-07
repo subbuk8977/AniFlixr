@@ -13,9 +13,21 @@ const Suggestions = () => {
           </h1>
           <CardContainer></CardContainer>
         </div>
-        <div className="Classics sliderContainer">
+        <div className="Action sliderContainer">
           <h1>
-            Classics! <span>View More</span>
+            Action! <span>View More</span>
+          </h1>
+          <CardContainer></CardContainer>
+        </div>
+        <div className="Thriller sliderContainer">
+          <h1>
+            Thriller! <span>View More</span>
+          </h1>
+          <CardContainer></CardContainer>
+        </div>
+        <div className="Horror sliderContainer">
+          <h1>
+            Horror! <span>View More</span>
           </h1>
           <CardContainer></CardContainer>
         </div>
