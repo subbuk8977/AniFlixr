@@ -55,7 +55,7 @@
         border: none;
         border-radius: 8px;
 
-        background-color: #2f925d;
+        background-color: red;
         color: white;
 
         transition: 0.5s;
@@ -63,7 +63,7 @@
         cursor: pointer;
 
         &:hover {
-          background: red;
+          background: #2f925d;
         }
       }
       .trailer {
@@ -82,7 +82,7 @@
         transition: 0.5s;
 
         &:hover {
-          background-color: red;
+          background-color: #2f925d;
         }
       }
     }

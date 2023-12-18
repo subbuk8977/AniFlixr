@@ -6,6 +6,8 @@ import { Search } from "react-feather";
 import { Menu } from "react-feather";
 import { X } from "react-feather";
 
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(0);
   const [clicked, setClicked] = useState(0);
@@ -29,8 +31,12 @@ const Navbar = () => {
       </div>
       <div className="middle">
         <ul>
-          <span>Home</span>
-          <span>Trending</span>
+          <Link to="/" className="links">
+            <span>Home</span>
+          </Link>
+          <Link to="/trending" className="links">
+            <span>Trending</span>
+          </Link>
           <span>Categories</span>
           <span>Anime Release</span>
           <span>About</span>
@@ -42,10 +48,26 @@ const Navbar = () => {
       </div>
       <div
         className="navigation_mobile"
-        style={{ left: `${!clicked ? "-100vw" : "0vw"}` }}
+        style={{ left: `${!clicked ? "+100vw" : "0vw"}` }}
       >
-        <span>Home</span>
-        <span>Trending</span>
+        <Link to="/" className="links">
+          <span
+            onClick={() => {
+              setClicked(0);
+            }}
+          >
+            Home
+          </span>
+        </Link>
+        <Link to="/trending" className="links">
+          <span
+            onClick={() => {
+              setClicked(0);
+            }}
+          >
+            Trending
+          </span>
+        </Link>
         <span>Categories</span>
         <span>Anime Release</span>
         <span>About</span>
