@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-
 import "./Slider.scss";
-const Slider = () => {
+const Slider = ({ featured }) => {
   const m = 4;
+  const [information, setInformation] = useState(featured);
   setTimeout(() => {
     setInformation(
       information.map((item) => {
@@ -13,7 +13,6 @@ const Slider = () => {
       })
     );
   }, 5000);
-  const [information, setInformation] = useState(featured_slider);
   return (
     <div
       className="slider"
@@ -35,7 +34,6 @@ const Slider = () => {
           <div
             className={`item${item.id} transition-page-featured`}
             style={{
-              // backgroundImage: `url('${item.posterMobile}')`,
               height: "100vh",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",

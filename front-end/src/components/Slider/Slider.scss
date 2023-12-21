@@ -1,81 +1,89 @@
-.trending-page-overlay {
-  background-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 1));
-  height: 100%;
-  width: 100%;
+.slider {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
   position: relative;
 
-  .trending-page-info {
-    color: white;
-    position: absolute;
+  .trending-page-overlay {
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 1));
+    height: 100%;
+    width: 100%;
+    position: relative;
 
-    gap: 10px;
-
-    h1 {
-      text-wrap: nowrap;
-    }
-
-    .meta {
-      display: flex;
-      width: 100%;
-
-      justify-content: flex-start;
-      gap: 5px;
-
-      span {
-        color: gray;
-        &::after {
-          content: " · ";
-        }
-      }
-    }
-
-    p {
-      font-size: 1rem;
-    }
-
-    .buttons {
-      margin-top: 10px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
+    .trending-page-info {
+      color: white;
+      position: absolute;
 
       gap: 20px;
-      .play {
-        font-size: 0.9rem;
 
-        padding: 15px 30px;
-        outline: none;
-        border: none;
-        border-radius: 8px;
+      h1 {
+        text-wrap: wrap;
+        line-height: 1;
+      }
 
-        background-color: red;
-        color: white;
+      .meta {
+        display: flex;
+        width: 100%;
 
-        transition: 0.5s;
+        justify-content: flex-start;
+        gap: 5px;
 
-        cursor: pointer;
-
-        &:hover {
-          background: #2f925d;
+        span {
+          color: gray;
+          &::after {
+            content: " · ";
+          }
         }
       }
-      .trailer {
-        cursor: pointer;
 
-        font-size: 0.9rem;
+      p {
+        font-size: 1rem;
+      }
 
-        padding: 15px 30px;
-        outline: none;
-        border: none;
-        border-radius: 8px;
+      .buttons {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
 
-        background-color: #28262d;
-        color: white;
+        gap: 20px;
+        .play {
+          font-size: 0.9rem;
 
-        transition: 0.5s;
+          padding: 15px 30px;
+          outline: none;
+          border: none;
+          border-radius: 8px;
 
-        &:hover {
-          background-color: #2f925d;
+          background-color: red;
+          color: white;
+
+          transition: 0.5s;
+
+          cursor: pointer;
+
+          &:hover {
+            background: #2f925d;
+          }
+        }
+        .trailer {
+          cursor: pointer;
+
+          font-size: 0.9rem;
+
+          padding: 15px 30px;
+          outline: none;
+          border: none;
+          border-radius: 8px;
+
+          background-color: #28262d;
+          color: white;
+
+          transition: 0.5s;
+
+          &:hover {
+            background-color: #2f925d;
+          }
         }
       }
     }

@@ -9,12 +9,15 @@ const Footer = () => {
       <hr />
       <div className="footer">
         <p>
-          AniFlixr is not affiliated or associated with any of the Anime
-          Producing studios that are responsible for the production and
-          distribution of any of the Animes that are listed on this site. It
-          exists for the sole purpose of providing an easy-to-use interface for
-          users to connect to self-hosted anime files by third party providers.
-          As such, AniFlixr cannot be subjected to any sort of a DMCA complaint.
+          AniFlixr has been developed as a personal project aimed at honing my
+          skills in software development. It is important to clarify that
+          AniFlixr is not affiliated or associated with any Anime Producing
+          studios responsible for the production and distribution of the listed
+          Animes. The platform serves as a user-friendly interface for
+          connecting to self-hosted anime files provided by third-party sources.
+          It is emphasized that AniFlixr, being a personal development project,
+          is not intended to resist legal obligations. In the event of any legal
+          concerns, AniFlixr will promptly cease its operations.
         </p>
         <div className="logos">
           <a

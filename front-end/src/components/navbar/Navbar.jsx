@@ -37,13 +37,15 @@ const Navbar = () => {
           <Link to="/trending" className="links">
             <span>Trending</span>
           </Link>
-          <span>Categories</span>
-          <span>Anime Release</span>
-          <span>About</span>
+          <Link to="/categories" className="links">
+            <span>Categories</span>
+          </Link>
         </ul>
       </div>
       <div className="right">
-        <Search></Search>
+        <Link to="/search" className="links">
+          <Search></Search>
+        </Link>
         <button className="login">Log In</button>
       </div>
       <div
@@ -68,10 +70,24 @@ const Navbar = () => {
             Trending
           </span>
         </Link>
-        <span>Categories</span>
-        <span>Anime Release</span>
-        <span>About</span>
-        <span>Search</span>
+        <Link to="/categories" className="links">
+          <span
+            onClick={() => {
+              setClicked(0);
+            }}
+          >
+            Categories
+          </span>
+        </Link>
+        <Link to="/search" className="links">
+          <span
+            onClick={() => {
+              setClicked(0);
+            }}
+          >
+            Search
+          </span>
+        </Link>
         <span>Log In </span>
       </div>
       {!clicked ? (
