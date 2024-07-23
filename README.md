@@ -1,2 +1,8 @@
-# AniFlixr
-AniFlixr is an anime streaming platform designed to deliver an uninterrupted viewing experience through ad-free streaming. The project focuses on creating a visually aesthetic user interface to enhance the overall enjoyment of anime content.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
