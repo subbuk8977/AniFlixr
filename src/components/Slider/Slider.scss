@@ -1,3 +1,165 @@
+// .slider {
+//   width: 100vw;
+//   height: 100vh;
+//   overflow-x: hidden;
+//   position: relative;
+
+//   .trending-page-overlay {
+//     background: linear-gradient(to bottom, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 1));
+//     height: 100%;
+//     width: 100%;
+//     position: relative;
+
+//     .trending-page-info {
+//       color: white;
+//       position: absolute;
+
+//       gap: 20px;
+
+//       h1 {
+//         text-wrap: wrap;
+//         line-height: 1;
+//       }
+
+//       .meta {
+//         display: flex;
+//         width: 100%;
+
+//         justify-content: flex-start;
+//         gap: 5px;
+
+//         span {
+//           color: gray;
+//           &::after {
+//             content: " · ";
+//           }
+//         }
+//       }
+
+//       p {
+//         font-size: 1rem;
+//       }
+
+//       .buttons {
+//         margin-top: 10px;
+//         display: flex;
+//         justify-content: flex-start;
+//         align-items: center;
+
+//         gap: 20px;
+//         .play {
+//           font-size: 0.9rem;
+
+//           padding: 15px 30px;
+//           outline: none;
+//           border: none;
+//           border-radius: 8px;
+
+//           background-color: red;
+//           color: white;
+
+//           transition: 0.5s;
+
+//           cursor: pointer;
+
+//           &:hover {
+//             background: #2f925d;
+//           }
+//         }
+//         .trailer {
+//           cursor: pointer;
+
+//           font-size: 0.9rem;
+
+//           padding: 15px 30px;
+//           outline: none;
+//           border: none;
+//           border-radius: 8px;
+
+//           background-color: #28262d;
+//           color: white;
+
+//           transition: 0.5s;
+
+//           &:hover {
+//             background-color: #2f925d;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   .slider {
+//     .item0 {
+//       background: var(--item0Laptop);
+//     }
+//     .item1 {
+//       background: var(--item1Laptop);
+//     }
+//     .item2 {
+//       background: var(--item2Laptop);
+//     }
+//     .item3 {
+//       background: var(--item3Laptop);
+//     }
+//     .item4 {
+//       background: var(--item4Laptop);
+//     }
+//   }
+//   .trending-page-info {
+//     h1 {
+//       font-size: 3.5rem;
+//     }
+//     p {
+//       font-size: 0.8rem;
+//     }
+
+//     bottom: 15vh;
+//     left: 10vw;
+//     width: 40vw;
+//   }
+// }
+// @media screen and (max-width: 768px) {
+//   .slider {
+//     .item0 {
+//       background: var(--item0Mobile);
+//     }
+//     .item1 {
+//       background: var(--item1Mobile);
+//     }
+//     .item2 {
+//       background: var(--item2Mobile);
+//     }
+//     .item3 {
+//       background: var(--item3Mobile);
+//     }
+//     .item4 {
+//       background: var(--item4Mobile);
+//     }
+//   }
+//   .trending-page-info {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: flex-start;
+
+//     width: 80vw;
+//     bottom: 15vh;
+//     left: 50%;
+//     transform: translate(-50%, 0);
+
+//     h1 {
+//       font-size: 2.5rem;
+//     }
+//     p {
+//       text-align: justify;
+//     }
+//     button {
+//       font-size: 0.9rem;
+//     }
+//   }
+// }
 .slider {
   width: 100vw;
   height: 100vh;
@@ -13,7 +175,6 @@
     .trending-page-info {
       color: white;
       position: absolute;
-
       gap: 20px;
 
       h1 {
@@ -24,7 +185,6 @@
       .meta {
         display: flex;
         width: 100%;
-
         justify-content: flex-start;
         gap: 5px;
 
@@ -45,40 +205,33 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-
         gap: 20px;
+
         .play {
           font-size: 0.9rem;
-
           padding: 15px 30px;
           outline: none;
           border: none;
           border-radius: 8px;
-
           background-color: red;
           color: white;
-
           transition: 0.5s;
-
           cursor: pointer;
 
           &:hover {
             background: #2f925d;
           }
         }
+
         .trailer {
           cursor: pointer;
-
           font-size: 0.9rem;
-
           padding: 15px 30px;
           outline: none;
           border: none;
           border-radius: 8px;
-
           background-color: #28262d;
           color: white;
-
           transition: 0.5s;
 
           &:hover {
@@ -86,9 +239,16 @@
           }
         }
       }
+
+      & {
+        bottom: 15vh;
+        left: 10vw;
+        width: 40vw;
+      }
     }
   }
 }
+
 @media screen and (min-width: 768px) {
   .slider {
     .item0 {
@@ -106,18 +266,6 @@
     .item4 {
       background: var(--item4Laptop);
     }
-  }
-  .trending-page-info {
-    h1 {
-      font-size: 3.5rem;
-    }
-    p {
-      font-size: 0.8rem;
-    }
-
-    bottom: 15vh;
-    left: 10vw;
-    width: 40vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -138,12 +286,12 @@
       background: var(--item4Mobile);
     }
   }
+
   .trending-page-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
     width: 80vw;
     bottom: 15vh;
     left: 50%;
@@ -152,11 +300,15 @@
     h1 {
       font-size: 2.5rem;
     }
+
     p {
       text-align: justify;
+      font-size: 0.8rem;
     }
+
     button {
       font-size: 0.9rem;
     }
   }
 }
+

@@ -18,15 +18,15 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-
+      transition: 0.5s;
+      cursor: pointer;
       gap: 5px;
       img {
         border-radius: 10px;
         height: calc(13 * (max(calc((85vw - 200px) / 5), 139.125px)) / 9);
         width: max(calc((85vw - 200px) / 5), 139.13px);
       }
-      transition: 0.5s;
-      cursor: pointer;
+      
 
       .cardInformation {
         display: flex;

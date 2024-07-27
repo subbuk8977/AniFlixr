@@ -14,10 +14,11 @@
     .github {
       cursor: pointer;
       color: white;
+      transition: 0.5s;
       &:hover {
         color: red;
       }
-      transition: 0.5s;
+      
     }
   }
 }
